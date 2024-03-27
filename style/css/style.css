@@ -1,0 +1,263 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* Display breakpoint */
+/* Container Width */
+/* Background Color */
+/* Button and Link color */
+html {
+  font-family: Arial;
+}
+html h1, html h2, html h3, html h4, html h5, html h6 {
+  font-family: Georgia;
+  font-weight: 400;
+}
+html p {
+  font-weight: 400;
+}
+
+@media (min-width: 1900px) {
+  html {
+    font-size: 24px;
+  }
+}
+.container {
+  width: 95%;
+  max-width: 1920px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  color: rgb(36, 28, 21);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: Arial;
+}
+
+.link:hover {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Arial;
+}
+
+.row-column-4, .row-column-3, .row-column-2 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.row-column-2 {
+  grid-template-columns: repeat(auto-fit, 50%);
+}
+
+.row-column-3 {
+  grid-template-columns: repeat(auto-fit, 33.33%);
+}
+
+.row-column-4 {
+  grid-template-columns: repeat(auto-fit, 25%);
+}
+
+.header {
+  position: fixed;
+  width: 100vw;
+  padding: 1.5vw 0px;
+  background-color: #bcbab8;
+}
+.header__menu {
+  padding: 0.5vw 0;
+}
+.header__link {
+  font-size: 1rem;
+  margin-right: 1.5vw;
+}
+.header__logo {
+  width: 250px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.header__controls {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+  grid-template-columns: 2fr 3fr;
+}
+.header__contacts {
+  text-align: right;
+  font-size: 1rem;
+  margin-right: 5%;
+}
+.header__sign-in-sign-up-bar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12.5% 25% 25% 37.5%;
+  grid-template-columns: 12.5% 25% 25% 37.5%;
+}
+.header__sign-in-sign-up-bar button {
+  background: none;
+  border: none;
+}
+.header__sign-in-sign-up-bar button:hover {
+  border: solid 0.2px grey;
+  border-radius: 80px;
+}
+.header__sign-in-sign-up-bar button:last-child {
+  border-radius: 80px;
+  background-color: rgb(255, 224, 27);
+}
+.header .language-switcher {
+  width: 40px;
+  border-radius: 120px;
+}
+
+.banner {
+  height: 150vh;
+  padding-top: 8vh;
+  background-color: #bcbab8;
+}
+.banner__container {
+  width: 100%;
+}
+.banner__content {
+  height: 42vh;
+  max-height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: ". . . ." ". a a ." ". . . .";
+}
+.banner__text-block {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: a;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+}
+.banner-benefits__row-2 > .banner__text-block {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+}
+.banner__title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.banner__text {
+  font-size: 1.4rem;
+}
+
+.banner-benefits {
+  height: 122vh;
+}
+.banner-benefits__row {
+  height: 82vh;
+  max-height: 870px;
+}
+.banner-benefits__img {
+  width: 100%;
+  max-height: 80%;
+}
+.banner-benefits__content {
+  padding: 1.5rem;
+  max-height: 200px;
+}
+.banner-benefits__title {
+  margin-bottom: 3rem;
+}
+.banner-benefits__link {
+  margin-left: 1rem;
+}
+.banner-benefits #banner-benefits-1 {
+  background-color: rgb(217, 149, 54);
+}
+.banner-benefits #banner-benefits-2 {
+  background-color: rgb(231, 183, 95);
+}
+.banner-benefits #banner-benefits-3 {
+  background-color: rgb(253, 248, 234);
+}
+.banner-benefits #banner-benefits-4 {
+  background-color: rgb(255, 255, 255);
+}
+.banner-benefits__row-2 {
+  background-color: rgb(36, 28, 21);
+  height: 40vh;
+  max-height: 450px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+  grid-template-columns: repeat(8, 1fr);
+      grid-template-areas: ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . a a a a . ." ". . . . . . . .";
+}
+.banner-benefits__text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: a;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+}
+.banner-benefits__row-2 > .banner-benefits__text {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+}

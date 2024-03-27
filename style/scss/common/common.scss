@@ -1,0 +1,61 @@
+html{
+    font-family: Arial;
+
+    h1 , h2, h3, h4 , h5, h6{
+        font-family: Georgia;
+        font-weight: 400;
+    }
+
+    p{
+        font-weight: 400;
+    }
+}
+
+@include desctop{
+    html{
+        font-size: 24px;
+    }
+}
+
+.container{
+    width: 95%;
+    max-width: $containerWidth;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link{
+    color: $linkColor;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Arial;
+}
+
+.link:hover{
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Arial;
+}
+
+%row{
+    display: grid;
+}
+
+.row-column-2{
+    @extend %row;
+    grid-template-columns: repeat(auto-fit, 50%);
+}
+
+.row-column-3{
+    @extend %row;
+    grid-template-columns: repeat(auto-fit, 33.33%);
+}
+
+.row-column-4{
+    @extend %row;
+    grid-template-columns: repeat(auto-fit, 25%);
+}
+
+
