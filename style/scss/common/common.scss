@@ -1,24 +1,31 @@
 html{
-    font-family: Arial;
+    font-family: $mainFontFamily;
+    font-weight: $normalFontWeight;
 
     h1 , h2, h3, h4 , h5, h6{
-        font-family: Georgia;
-        font-weight: 400;
+        font-family: $secondFontFamily;
+        font-weight: $normalFontWeight;
     }
 
     p{
-        font-weight: 400;
+        font-weight: $normalFontWeight;
     }
 }
 
 @include desctop{
     html{
-        font-size: 24px;
+        font-size: $mainDesctopFontSize !important;
+    }
+}
+
+@include mobile{
+    html{
+        font-size: $mainMobileFontSize !important;
     }
 }
 
 .container{
-    width: 95%;
+    width: 90%;
     max-width: $containerWidth;
 
     display: block;
@@ -29,14 +36,11 @@ html{
 .link{
     color: $linkColor;
     text-decoration: none;
-    font-weight: 400;
-    font-family: Arial;
 }
 
 .link:hover{
     text-decoration: none;
-    font-weight: 600;
-    font-family: Arial;
+    font-weight: $mediumFontWeight;
 }
 
 %row{

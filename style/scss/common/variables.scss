@@ -1,5 +1,5 @@
 /* Display breakpoint */
-$breakpointDesctop: 1900px;
+$breakpointDesctop: 1920px;
 $breakpointLaptop: 1024px;
 $breakpointMobile: 768px;
 
@@ -13,11 +13,35 @@ $bgColor2: rgba(231, 183, 95, 1);
 $bgColor3: rgba(253, 248, 234, 1);
 $bgColor4: rgb(255, 255, 255);
 $bgColor5: rgba(36, 28, 21, 1);
+$bgColor6: rgba(246, 246, 244, 1);
+$bgColor7: rgba(197, 219, 242, 1);
 
-/* Button and Link color */
-$buttonHoverColor: grey;
+/* Button,Border and Link color */
+$buttonHoverColor: rgba(188, 186, 184, 1);
 $buttonActiveColor: rgba(255, 224, 27, 1);
+
+$borderColor: rgba(188, 186, 184, 1);
 
 $linkColor: rgba(36, 28, 21, 1);
 
 $whiteTextColor: $bgColor4;
+$greyTextColor: rgba(36, 28, 21, 0.65);
+
+/* Font Family */
+$mainFontFamily: Arial;
+$secondFontFamily: Georgia;
+
+$normalFontWeight: 400;
+$mediumFontWeight: 600;
+
+/* Font Sizes */ 
+$mainDesctopFontSize: 24px;
+$mainMobileFontSize: 14px;
+
+
+$smallFontSize: 0.8rem;
+$normalFontSize: 1rem;
+$mediumFontSize: 1.4rem;
+
+$mediumTitleFontSize: 2rem;
+$largeTitleForntSize: 2.5rem;

@@ -7,17 +7,18 @@
     background-color: $bannerBackgroundColor;
 
     &__menu {
-        padding: 0.5vw 0;
+        padding: 0.6vw 0;
       }
 
     &__link{
-        font-size: 1rem;
+        font-size: $smallFontSize;
 
         margin-right: 1.5vw;
     }
 
     &__logo {
         width: 250px;
+        height: 40px;
 
         justify-self: center;
     }
@@ -29,8 +30,9 @@
 
     &__contacts{
         text-align: right;
-        font-size: 1rem;
+        font-size: $smallFontSize;
 
+        margin-top: 0.2rem;
         margin-right: 5%;
     }
 

@@ -1,5 +1,6 @@
 .banner{
-    height: 150vh;
+    height: 170vh;
+    max-height: 1980px;
     padding-top: 8vh;
 
     background-color: $bannerBackgroundColor;
@@ -18,23 +19,21 @@
             ". . . ."
             ". a a ."
             ". . . .";
-    }
 
-    &__text-block{
-        grid-area: a;
-        align-self: center;
-        justify-self: center;
-
-        text-align: center;
-
+        & > *{
+            grid-area: a;
+            align-self: center;
+            justify-self: center;
+            text-align: center;
+        }
     }
 
     &__title{
-        font-size: 2.5rem;
+        font-size: $largeTitleForntSize;
         margin-bottom: 1.5rem;
     }
 
     &__text{
-       font-size: 1.4rem;
+       font-size: $mediumFontSize;
     }
 }

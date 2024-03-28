@@ -1,0 +1,83 @@
+.prices{
+    height: 110vh;
+    max-height: 1350px;
+    padding: 10vh 0vh;
+
+    background-color: $bgColor6;
+
+    &__title-container{
+        text-align: center;
+        height: 10vh;
+        max-height: 110px;
+    }
+
+    &__title{
+        font-size: $mediumTitleFontSize;
+    }
+
+    &__recommends-plan{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            ". a . .";
+
+        & > *{
+            /* text */
+            grid-area: a;
+            align-self: center;
+            justify-self: center;
+            text-align: center;
+        }
+    }
+
+    &__recomends-plan-container{
+        height: 5vh;
+        padding: 1.7vh 0;
+        width: 100%;
+
+        font-size: $smallFontSize;
+
+        background-color: $bgColor7;
+        border: solid 1px $borderColor;
+    }
+
+    &__table-container{
+        height: 60vh;
+        max-height: 650px;
+
+        & > *{
+            border: solid 1px $borderColor;
+
+            padding: 1.5vw;
+        }
+    }
+
+    &__plan-row{
+        border-bottom: solid 1px $borderColor;
+        min-height: 7.5vh;
+        max-height: 200px;
+
+        &:last-child{
+            border: none;
+        }
+    }
+
+    &__plan-text{
+        color: $greyTextColor;
+        font-size: $smallFontSize;
+
+        margin-top: 0.8vw;
+
+        &:last-child{
+            margin-bottom: 1.5vw;
+        }
+    }
+
+    &__row-title{
+        font-size: $smallFontSize;
+        text-align: center;
+        text-decoration: underline;
+
+        margin: 2vh 0;
+    }
+}
