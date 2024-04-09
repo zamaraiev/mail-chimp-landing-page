@@ -19,13 +19,15 @@ $bgColor7: rgba(197, 219, 242, 1);
 /* Button,Border and Link color */
 $buttonHoverColor: rgba(188, 186, 184, 1);
 $buttonActiveColor: rgba(255, 224, 27, 1);
+$buttonBorderColor: rgb(100, 99, 98);
 
 $borderColor: rgba(188, 186, 184, 1);
 
 $linkColor: rgba(36, 28, 21, 1);
 
-$whiteTextColor: $bgColor4;
+$whiteTextColor: rgb(255, 255, 255);
 $greyTextColor: rgba(36, 28, 21, 0.65);
+$regularTextColor: #000;
 
 /* Font Family */
 $mainFontFamily: Arial;

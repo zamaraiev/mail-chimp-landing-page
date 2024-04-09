@@ -39,22 +39,6 @@
     &__sign-in-sign-up-bar{
         display: grid;
         grid-template-columns: 12.5% 25% 25% 37.5%;
-
-        button{
-            background: none;
-            border: none;
-        }
-
-        button:hover{
-            border: solid 0.2px $buttonHoverColor;
-            border-radius: 80px;
-        }
-
-        button:last-child{
-            border-radius: 80px;
-
-            background-color: $buttonActiveColor;
-        }
     }
 
     .language-switcher{

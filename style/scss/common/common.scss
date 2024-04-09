@@ -36,11 +36,25 @@ html{
 .link{
     color: $linkColor;
     text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+        font-weight: $mediumFontWeight;
+    }
 }
 
-.link:hover{
-    text-decoration: none;
-    font-weight: $mediumFontWeight;
+.button{
+    background-color: $buttonActiveColor;
+    border-radius: 80px;
+    border: none;
+
+    &:hover{
+        border: solid 0.4px $buttonBorderColor;
+    }
+}
+
+.button-transperent{
+    background: none;
 }
 
 %row{

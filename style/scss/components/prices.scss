@@ -1,6 +1,6 @@
 .prices{
     height: 110vh;
-    max-height: 1350px;
+    max-height: 1800px;
     padding: 10vh 0vh;
 
     background-color: $bgColor6;
@@ -42,8 +42,9 @@
     }
 
     &__table-container{
-        height: 60vh;
-        max-height: 650px;
+        height: fit-content;
+
+        background-color: $bgColor4;
 
         & > *{
             border: solid 1px $borderColor;
@@ -52,13 +53,27 @@
         }
     }
 
+    &__plan-describe{
+        height: 6vh;
+        max-height: 80px;
+    }
+
     &__plan-row{
         border-bottom: solid 1px $borderColor;
-        min-height: 7.5vh;
-        max-height: 200px;
+        min-height: 5vh;
+        max-height: 300px;
+        padding: 2.5vh 0;
 
         &:last-child{
             border: none;
+        }
+
+        &:first-child{
+            padding-top: 0;
+
+            &> p:last-child{
+                margin-top: 2vh;
+            }
         }
     }
 
@@ -66,18 +81,40 @@
         color: $greyTextColor;
         font-size: $smallFontSize;
 
-        margin-top: 0.8vw;
-
-        &:last-child{
-            margin-bottom: 1.5vw;
-        }
+        margin-top: 1vh;
     }
 
     &__row-title{
         font-size: $smallFontSize;
         text-align: center;
         text-decoration: underline;
+    }
 
-        margin: 2vh 0;
+    /* Service plan warning */
+
+    &__service-plan-warning{
+        text-align: center;
+        color: $greyTextColor;
+        margin: 1.5vh 0;
+
+        & span:first-child{
+            font-weight: $mediumFontWeight;
+            color: $regularTextColor;
+        }
+
+        & span:last-child{
+            text-decoration: underline;
+        }
+    }
+
+    /* Prices See All Plan Button */
+
+    &__button-container{
+        text-align: center;
+    }
+
+    &__see-all-plan-button{
+        width: 12vw;
+        height: 5vh;
     }
 }

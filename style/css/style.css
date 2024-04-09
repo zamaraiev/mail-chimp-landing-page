@@ -89,10 +89,22 @@ html p {
   color: rgb(36, 28, 21);
   text-decoration: none;
 }
-
 .link:hover {
   text-decoration: none;
   font-weight: 600;
+}
+
+.button {
+  background-color: rgb(255, 224, 27);
+  border-radius: 80px;
+  border: none;
+}
+.button:hover {
+  border: solid 0.4px rgb(100, 99, 98);
+}
+
+.button-transperent {
+  background: none;
 }
 
 .row-column-4, .row-column-3, .row-column-2 {
@@ -149,25 +161,13 @@ html p {
   -ms-grid-columns: 12.5% 25% 25% 37.5%;
   grid-template-columns: 12.5% 25% 25% 37.5%;
 }
-.header__sign-in-sign-up-bar button {
-  background: none;
-  border: none;
-}
-.header__sign-in-sign-up-bar button:hover {
-  border: solid 0.2px rgb(188, 186, 184);
-  border-radius: 80px;
-}
-.header__sign-in-sign-up-bar button:last-child {
-  border-radius: 80px;
-  background-color: rgb(255, 224, 27);
-}
 .header .language-switcher {
   width: 40px;
   border-radius: 120px;
 }
 
 .banner {
-  height: 170vh;
+  height: 172vh;
   max-height: 1980px;
   padding-top: 8vh;
   background-color: #bcbab8;
@@ -208,14 +208,14 @@ html p {
 }
 .banner-benefits__row {
   height: 82vh;
-  max-height: 870px;
+  max-height: 900px;
 }
 .banner-benefits__column {
   height: 100%;
 }
 .banner-benefits__img {
   width: 100%;
-  max-height: 80%;
+  max-height: 82%;
 }
 .banner-benefits__content {
   padding: 1.5rem;
@@ -267,9 +267,11 @@ html p {
 
 .prices {
   height: 110vh;
-  max-height: 1350px;
+  max-height: 1800px;
   padding: 10vh 0vh;
   background-color: rgb(246, 246, 244);
+  /* Service plan warning */
+  /* Prices See All Plan Button */
 }
 .prices__title-container {
   text-align: center;
@@ -305,32 +307,60 @@ html p {
   border: solid 1px rgb(188, 186, 184);
 }
 .prices__table-container {
-  height: 60vh;
-  max-height: 650px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
 }
 .prices__table-container > * {
   border: solid 1px rgb(188, 186, 184);
   padding: 1.5vw;
 }
+.prices__plan-describe {
+  height: 6vh;
+  max-height: 80px;
+}
 .prices__plan-row {
   border-bottom: solid 1px rgb(188, 186, 184);
-  min-height: 7.5vh;
-  max-height: 200px;
+  min-height: 5vh;
+  max-height: 300px;
+  padding: 2.5vh 0;
 }
 .prices__plan-row:last-child {
   border: none;
 }
+.prices__plan-row:first-child {
+  padding-top: 0;
+}
+.prices__plan-row:first-child > p:last-child {
+  margin-top: 2vh;
+}
 .prices__plan-text {
   color: rgba(36, 28, 21, 0.65);
   font-size: 0.8rem;
-  margin-top: 0.8vw;
-}
-.prices__plan-text:last-child {
-  margin-bottom: 1.5vw;
+  margin-top: 1vh;
 }
 .prices__row-title {
   font-size: 0.8rem;
   text-align: center;
   text-decoration: underline;
-  margin: 2vh 0;
+}
+.prices__service-plan-warning {
+  text-align: center;
+  color: rgba(36, 28, 21, 0.65);
+  margin: 1.5vh 0;
+}
+.prices__service-plan-warning span:first-child {
+  font-weight: 600;
+  color: #000;
+}
+.prices__service-plan-warning span:last-child {
+  text-decoration: underline;
+}
+.prices__button-container {
+  text-align: center;
+}
+.prices__see-all-plan-button {
+  width: 12vw;
+  height: 5vh;
 }
