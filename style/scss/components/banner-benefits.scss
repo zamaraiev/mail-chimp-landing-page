@@ -1,5 +1,5 @@
 .banner-benefits{
-    height: 122vh;
+    height: 120vh;
 
     &__row{
         height: 82vh;
@@ -12,7 +12,7 @@
 
     &__img{
         width: 100%;
-        max-height: 82%;
+        max-height: 80%;
     }
 
     &__content{
@@ -50,7 +50,7 @@
     &__row-2{
         background-color: $bgColor5;
 
-        height: 40vh;
+        height: 38vh;
         max-height: 450px;
 
         display: grid;
@@ -73,5 +73,13 @@
         text-align: center;
         color: $whiteTextColor;
         font-size: $mediumFontSize;
+    }
+}
+
+@include laptop{
+    .banner-benefits{
+        &__row{
+            max-height: 650px;
+        }
     }
 }

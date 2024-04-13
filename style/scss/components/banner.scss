@@ -1,5 +1,5 @@
 .banner{
-    height: 172vh;
+    height: 170vh;
     max-height: 1980px;
     padding-top: 8vh;
 
@@ -35,5 +35,11 @@
 
     &__text{
        font-size: $mediumFontSize;
+    }
+}
+
+@include laptop{
+    .banner{
+       max-height: 1440px;
     }
 }

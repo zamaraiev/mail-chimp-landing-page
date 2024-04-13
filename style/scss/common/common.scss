@@ -1,3 +1,4 @@
+/* Global */
 html{
     font-family: $mainFontFamily;
     font-weight: $normalFontWeight;
@@ -12,6 +13,8 @@ html{
     }
 }
 
+/* Font Size */
+
 @include desctop{
     html{
         font-size: $mainDesctopFontSize !important;
@@ -24,6 +27,7 @@ html{
     }
 }
 
+/* Display Container */
 .container{
     width: 90%;
     max-width: $containerWidth;
@@ -33,6 +37,7 @@ html{
     margin-right: auto;
 }
 
+/* link + button, hover effect */
 .link{
     color: $linkColor;
     text-decoration: none;
@@ -56,6 +61,8 @@ html{
 .button-transperent{
     background: none;
 }
+
+/* Grid system */
 
 %row{
     display: grid;

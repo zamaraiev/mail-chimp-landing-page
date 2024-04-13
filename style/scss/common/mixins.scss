@@ -1,9 +1,10 @@
+/* media query */
 @mixin desctop() {
     @media (min-width: $breakpointDesctop) { @content; }
 }
 
 @mixin laptop() {
-    @media (min-width: $breakpointLaptop) { @content; }
+    @media (max-width: $breakpointLaptop) { @content; }
 }
 
 @mixin mobile(){
