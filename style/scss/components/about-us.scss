@@ -31,6 +31,12 @@
 
         height: 70vh;
         margin-bottom: 10vh;
+
+        &:last-child .about-us__schema-diagram{
+            grid-template-columns: 55% 15% 30%;
+
+            text-align: center;
+        }
     }
 
     &__description-title{
@@ -62,13 +68,14 @@
     &__schema{
         background-color: rgb(239, 238, 234);
         height: 100%;
+        padding: 5vh;
 
         &-diagram{
-            grid-template-columns: 25% 45% 30%;
+            grid-template-columns: 20% 55% 25%;
         }
 
         &-icon{
-            width: 25px;
+            width: 1.5rem;
         }
 
         &-step{
@@ -86,24 +93,25 @@
         }
 
         &-text {
-            padding-top: 1.5rem;
+            padding-top: 1.3rem;
             padding-left: 0.5rem;
         }
 
-        &-column:last-child {
-            padding-top: 15vh;
+        &-column:last-child &-icon{
+            margin-top: 15vh;
         }
 
         &-description{
-            margin-bottom: 5vh;
-            padding: 5vh;
+            margin-bottom: 10vh;
         }
 
         &-description-title{
             font-size: $mediumFontSize;
-            //text-align: center;
+        }
+
+        &-action-block{
+            text-align: left;
+            font-size: $smallFontSize;
         }
     }
-
-
 }
