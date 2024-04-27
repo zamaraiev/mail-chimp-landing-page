@@ -1,5 +1,6 @@
 .about-us{
-    height: 200vh;
+    max-height: 200vh;
+    max-width: 3800px;
 
     &__title{
         font-size: $mediumTitleFontSize;
@@ -7,17 +8,16 @@
 
     &__title-container{
         text-align: center;
-        height: 40vh;
+        padding: 10vh;
 
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas:
-            ". . . . . . ."
-            ". . . . . . ."
-            ". . a a a . ."
-            ". . . . . . ."
-            ". . . . . . .";
-
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . a a a . ."
+        ". . . . . . ."
+        ". . . . . . .";
         & > *{
             grid-area: a;
             align-self: center;
@@ -29,7 +29,7 @@
         grid-template-columns: repeat(auto-fit, 45%);
         column-gap: 10%;
 
-        height: 70vh;
+        min-height: 70vh;
         margin-bottom: 10vh;
 
         &:last-child .about-us__schema-diagram{
@@ -39,29 +39,21 @@
         }
     }
 
+    &__description-column {
+        display: grid;
+        align-items: center;
+    }
+
     &__description-title{
         font-size: $mediumFontSize;
 
         margin-bottom: 1rem;
-        margin-top: 8vh;
-
-        &:last-child{
-            margin-top: 10vh;
-        }
-    }
-
-    &__first-row-title{
-        margin-top: 40%;
-    }
-
-    &__last-description-title{
-        margin-top: 30vh;
     }
 
     &__description-text{
         font-size: $normalFontSize;
 
-        margin-bottom: 2rem;
+       margin-bottom: 2rem;
     }
     /* Schema */
 
@@ -75,13 +67,17 @@
         }
 
         &-icon{
-            width: 1.5rem;
+            width: $mediumFontSize;
+        }
+
+        &-small-icon{
+            width: $normalFontSize;
         }
 
         &-step{
             display: flex;
 
-            height: 8vh;
+            min-height: 8vh;
             width: 100%;
 
             justify-content: center;
@@ -90,28 +86,57 @@
                 background-color: white;
                 border-radius: 10px;
             }
-        }
 
-        &-text {
-            padding-top: 1.3rem;
-            padding-left: 0.5rem;
+            &-text {
+                display: grid;
+                align-items: center;
+     
+                margin-left: 0.5rem;
+            }
         }
 
         &-column:last-child &-icon{
             margin-top: 15vh;
         }
 
-        &-description{
+        &-heading{
             margin-bottom: 10vh;
-        }
 
-        &-description-title{
-            font-size: $mediumFontSize;
+            &-title{
+                font-size: $mediumFontSize;
+            }
         }
 
         &-action-block{
             text-align: left;
             font-size: $smallFontSize;
+
+            background-color: $bgColor4;
+            border-radius: 20px;
+
+            padding: 0.5rem;
+
+            & p{
+                text-align: center;
+            }
+
+            & ul{
+                & li{
+                    margin-top: 0.5rem;
+
+                    display: flex;
+                    align-items: center;
+                }
+
+                & img{
+                    margin-right: 0.5rem;
+                }
+
+                & ul{
+                    margin-left: 1rem;
+                }
+            }
         }
     }
 }
+ 

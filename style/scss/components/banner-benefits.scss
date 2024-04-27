@@ -1,18 +1,19 @@
 .banner-benefits{
-    height: 120vh;
+    min-height: 120vh;
+    max-height: 1400px;
 
     &__row{
-        height: 82vh;
+        min-height: 82vh;
         max-height: 900px;
     }
 
     &__column{
-        height: 100%;
+        min-height: 100%;
     }
 
     &__img{
         width: 100%;
-        max-height: 80%;
+        max-height: 82%;
     }
 
     &__content{
@@ -50,8 +51,8 @@
     &__row-2{
         background-color: $bgColor5;
 
-        height: 38vh;
-        max-height: 450px;
+        min-height: 38vh;
+        max-height: 530px;
 
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -79,7 +80,7 @@
 @include laptop{
     .banner-benefits{
         &__row{
-            max-height: 650px;
+            max-height: 660px;
         }
     }
 }

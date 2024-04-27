@@ -96,9 +96,9 @@
                 <h2 class="prices__title">Find the right plan</h2>
             </div>
             <div class="prices__table">
-                <div class="prices__recommends-plan">
-                    <div class="prices__recomends-plan-container">
-                        <p class="prices__recommends-text">Mailchimp Recommends</p>
+                <div class="prices__recommended-plan">
+                    <div class="prices__recommended-plan-container">
+                        <p class="prices__recommended-text">Mailchimp Recommends</p>
                     </div>
                 </div>
                 <div class="prices__table-container row-column-4">
@@ -234,11 +234,11 @@
             <div class="about-us__description-row row-column-2">
                 <div class="about-us__description-column">
                     <div class="about-us__schema">
-                        <div class="about-us__schema-description row-column-2">
-                            <p class="about-us__schema-description-title">
+                        <div class="about-us__schema-heading row-column-2">
+                            <p class="about-us__schema-heading-title">
                                 Feedback request
                             </p>
-                            <p class="about-us__schema-description-title">
+                            <p class="about-us__schema-heading-title">
                                 Email tagged contact
                             </p>
                         </div>
@@ -247,21 +247,21 @@
                             <div class="about-us__schema-column">
                                 <div class="about-us__schema-step about-us__schema-step-container">
                                     <img src="assets/about-us/play.svg" alt="icon" class="about-us__schema-icon">
-                                    <p class="about-us__schema-text">Customer purchase</p>
+                                    <p class="about-us__schema-step-text">Customer purchase</p>
                                 </div>
                                 <div class="about-us__schema-step">
                                     <img src="assets/about-us/arrow-down.svg" alt="icon" class="about-us__schema-icon">
                                 </div>
                                 <div class="about-us__schema-step about-us__schema-step-container">
                                     <img src="assets/about-us/clock.svg" alt="icon" class="about-us__schema-icon">
-                                    <p class="about-us__schema-text">Wait 1 week</p>
+                                    <p class="about-us__schema-step-text">Wait 1 week</p>
                                 </div>
                                 <div class="about-us__schema-step">
                                     <img src="assets/about-us/arrow-down.svg" alt="icon" class="about-us__schema-icon">
                                 </div>
                                 <div class="about-us__schema-step about-us__schema-step-container">
                                     <img src="assets/about-us/letter.svg" alt="icon" class="about-us__schema-icon">
-                                    <p class="about-us__schema-text">Send Feedback Request</p>
+                                    <p class="about-us__schema-step-text">Send Feedback Request</p>
                                 </div>
                             </div>
                             <div class="about-us__schema-column">
@@ -271,21 +271,23 @@
                     </div>
                 </div>
                 <div class="about-us__description-column">
-                    <p class="about-us__description-title about-us__first-row-title">Convert more customers at scale</p>
-                    <p class="about-us__description-text">
-                        Drive more traffic and sales by setting up 
-                        automations that trigger emails based on 
-                        customer behavior with our Customer Journey
-                        Builder.
-                    </p>
-                    <a href="#" class="about-us__description-link link">Learn more</a>
+                    <div class="about-us__description-column-container">
+                        <p class="about-us__description-title about-us__first-row-title">Convert more customers at scale</p>
+                        <p class="about-us__description-text">
+                            Drive more traffic and sales by setting up 
+                            automations that trigger emails based on 
+                            customer behavior with our Customer Journey
+                            Builder.
+                        </p>
+                        <a href="#" class="about-us__description-link link">Learn more</a>
+                    </div>
                 </div>
             </div>
             <div class="about-us__description-row row-column-2">
                 <div class="about-us__description-column">
                     <div class="about-us__schema">
-                        <div class="about-us__schema-description row-column-2">
-                            <p class="about-us__schema-description-title">
+                        <div class="about-us__schema-heading row-column-2">
+                            <p class="about-us__schema-heading-title">
                                 Custom Journey
                             </p>
                         </div>
@@ -293,7 +295,7 @@
                             <div class="about-us__schema-column">
                                 <div class="about-us__schema-step about-us__schema-step-container">
                                     <img src="assets/about-us/play.svg" alt="icon" class="about-us__schema-icon">
-                                    <p class="about-us__schema-text">Customer abandons cart</p>
+                                    <p class="about-us__schema-step-text">Customer abandons cart</p>
                                 </div>
                                 <div class="about-us__schema-step">
                                     <img src="assets/about-us/arrow-down.svg" alt="icon" class="about-us__schema-icon">
@@ -308,11 +310,15 @@
                                     <ul>
                                         <li>Rules</li>
                                         <ul>
-                                            <li><img src="assets/about-us/arrow-down.svg" alt="">1</li>
-                                            <li><img src="assets/about-us/arrow-down.svg" alt="">2</li>
-                                            <li><img src="assets/about-us/arrow-down.svg" alt="">3</li>
+                                            <li><img src="assets/about-us/shuffle.svg" alt="icon" class="about-us__schema-small-icon">If/Else</li>
+                                            <li><img src="assets/about-us/clock.svg" alt="icon" class="about-us__schema-small-icon">Time Delay</li>
+                                            <li><img src="assets/about-us/letter.svg" alt="icon" class="about-us__schema-small-icon">Wait for trigger</li>
                                         </ul>
-                                        <ul></ul>
+                                        <li>Actions</li>
+                                        <ul>
+                                            <li><img src="assets/about-us/list-check.svg" alt="icon" class="about-us__schema-small-icon">Send email</li>
+                                            <li><img src="assets/about-us/shuffle.svg" alt="icon" class="about-us__schema-small-icon">Send surbey email</li>
+                                        </ul>
                                     </ul>
                                </div>
                             </div>
@@ -320,22 +326,25 @@
                     </div>
                 </div>
                 <div class="about-us__description-column">
-                    <p class="about-us__description-title">Discover new ways to automate</p>
-                    <p class="about-us__description-text">
-                        Get a head start with pre-built journeys 
-                        that help you cross-sell your products, 
-                        recover abandoned carts, re-engage existing 
-                        customers, and win new ones.
-                    </p>
-                    <a href="#" class="about-us__description-link link">Learn more</a>
-
-                    <p class="about-us__description-title about-us__last-description-title">Keep your emails relevant and your brand growing</p>
-                    <p class="about-us__description-text">
-                        Deliver personalized emails based on 
-                        their buying behavior,survey responses, 
-                        chat interactions, and support tickets 
-                        to promote loyalty and growth.
-                    </p>
+                    <div class="about-us__description-column-container">
+                        <p class="about-us__description-title">Discover new ways to automate</p>
+                        <p class="about-us__description-text">
+                            Get a head start with pre-built journeys 
+                            that help you cross-sell your products, 
+                            recover abandoned carts, re-engage existing 
+                            customers, and win new ones.
+                        </p>
+                        <a href="#" class="about-us__description-link link">Learn more</a>
+                    </div>
+                    <div class="about-us__description-column-container">
+                        <p class="about-us__description-title about-us__last-description-title">Keep your emails relevant and your brand growing</p>
+                        <p class="about-us__description-text">
+                            Deliver personalized emails based on 
+                            their buying behavior,survey responses, 
+                            chat interactions, and support tickets 
+                            to promote loyalty and growth.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

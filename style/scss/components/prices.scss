@@ -1,5 +1,5 @@
 .prices{
-    height: 110vh;
+    min-height: 110vh;
     max-height: 1800px;
     padding: 10vh 0vh;
 
@@ -7,7 +7,7 @@
 
     &__title-container{
         text-align: center;
-        height: 10vh;
+        min-height: 10vh;
         max-height: 110px;
     }
 
@@ -15,11 +15,10 @@
         font-size: $mediumTitleFontSize;
     }
 
-    &__recommends-plan{
+    &__recommended-plan{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            ". a . .";
+        grid-template-areas: ". a . .";
 
         & > *{
             /* text */
@@ -28,17 +27,17 @@
             justify-self: center;
             text-align: center;
         }
-    }
 
-    &__recomends-plan-container{
-        height: 5vh;
-        padding: 1.7vh 0;
-        width: 100%;
-
-        font-size: $smallFontSize;
-
-        background-color: $bgColor7;
-        border: solid 1px $borderColor;
+        &-container{
+            min-height: 5vh;
+            padding: 1.7vh 0;
+            width: 100%;
+    
+            font-size: $smallFontSize;
+    
+            background-color: $bgColor7;
+            border: solid 1px $borderColor;
+        }
     }
 
     &__table-container{
@@ -54,27 +53,34 @@
     }
 
     &__plan-describe{
-        height: 6vh;
-        max-height: 80px;
+        min-height: 2.5rem;
     }
 
     &__plan-row{
         border-bottom: solid 1px $borderColor;
-        min-height: 5vh;
+        min-height: 8vh;
         max-height: 300px;
-        padding: 2.5vh 0;
+
+        align-items: center;
+        display: grid;
 
         &:last-child{
             border: none;
         }
 
         &:first-child{
-            padding-top: 0;
+            padding-bottom: 2vh;
 
             &> p:last-child{
                 margin-top: 2vh;
             }
         }
+    }
+
+    &__row-title{
+        font-size: $smallFontSize;
+        text-align: center;
+        text-decoration: underline;
     }
 
     &__plan-text{
@@ -84,18 +90,12 @@
         margin-top: 1vh;
     }
 
-    &__row-title{
-        font-size: $smallFontSize;
-        text-align: center;
-        text-decoration: underline;
-    }
-
     /* Service plan warning */
 
     &__service-plan-warning{
         text-align: center;
         color: $greyTextColor;
-        margin: 1.5vh 0;
+        margin: 1.5rem 0;
 
         & span:first-child{
             font-weight: $mediumFontWeight;
@@ -106,7 +106,6 @@
             text-decoration: underline;
         }
     }
-
     /* Prices See All Plan Button */
 
     &__button-container{
@@ -114,7 +113,7 @@
     }
 
     &__see-all-plan-button{
-        width: 12vw;
-        height: 5vh;
+        min-width: 12vw;
+        min-height: 5vh;
     }
 }

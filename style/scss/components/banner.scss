@@ -1,6 +1,6 @@
 .banner{
-    height: 170vh;
-    max-height: 1980px;
+    min-height: 170vh;
+    max-height: 2100px;
     padding-top: 8vh;
 
     background-color: $bannerBackgroundColor;
@@ -10,7 +10,7 @@
     }
 
     &__content{
-        height: 42vh;
+        min-height: 42vh;
         max-height: 500px;
 
         display: grid;
