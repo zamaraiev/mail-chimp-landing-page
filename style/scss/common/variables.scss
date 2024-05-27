@@ -1,7 +1,10 @@
 /* Display breakpoint */
-$breakpointDesctop: 1920px;
+$breakpointDesctop: 1900px;
 $breakpointLaptop: 1460px;
-$breakpointMobile: 768px;
+$breakpointMobile: 700px;
+
+/* HIDP */
+$breakpointMDPHeight: 800px;
 
 /* Container Width */
 $containerWidth: 1920px;
@@ -36,9 +39,9 @@ $secondFontFamily: Georgia;
 $normalFontWeight: 400;
 $mediumFontWeight: 600;
 
-/* Font Sizes */ 
-$mainDesctopFontSize: 24px;
-$mainMobileFontSize: 14px;
+/* Font Sizes  12 , 24*/ 
+$mainDesctopFontSize: 26px;
+$mainMobileFontSize: 12px;
 
 
 $smallFontSize: 0.8rem;

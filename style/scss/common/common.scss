@@ -15,16 +15,8 @@ html{
 
 /* Font Size */
 
-@include desctop{
-    html{
-        font-size: $mainDesctopFontSize !important;
-    }
-}
-
-@include mobile{
-    html{
-        font-size: $mainMobileFontSize !important;
-    }
+html{
+    font-size: clamp($mainMobileFontSize, 1.1vw ,$mainDesctopFontSize) !important;
 }
 
 /* Display Container */

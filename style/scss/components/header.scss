@@ -2,19 +2,19 @@
     position: fixed;
 
     width: 100vw;
-    padding: 1.5vw 0px;
+    padding: 1.5rem 0px;
 
     background-color: $bannerBackgroundColor;
 
     &__menu {
         display: flex;
         align-items: center;
+
+        gap: 1.5rem;
     }
 
     &__link{
         font-size: $smallFontSize;
-
-        margin-right: 1.5vw;
     }
 
     &__logo {
@@ -27,19 +27,17 @@
     &__controls{
         display: grid;
         grid-template-columns: 2fr 3fr;
-
-        align-items: center;
+        gap: 0.2rem;
     }
 
     &__contacts{
         height: 100%;
         display: grid;
-        align-items: center;
 
         text-align: right;
         font-size: $smallFontSize;
-        
-        margin-right: 5%;
+
+        align-items: center;
     }
 
     &__sign-in-sign-up-bar{
@@ -52,7 +50,8 @@
         border-radius: 120px;
 
         &__icon {
-            height: 75%;
+            height: 50%;
+            margin-top: 10%;
         }
     }
 }

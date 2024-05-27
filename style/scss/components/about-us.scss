@@ -1,43 +1,31 @@
 .about-us{
-    max-height: 200vh;
-    max-width: 3800px;
+    min-height: 90rem;
+    padding: 5rem;
 
     &__title{
         font-size: $mediumTitleFontSize;
-    }
-
-    &__title-container{
         text-align: center;
-        padding: 10vh;
+        margin: 0 auto 5rem auto;
 
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-areas:
-        ". . . . . . ."
-        ". . . . . . ."
-        ". . a a a . ."
-        ". . . . . . ."
-        ". . . . . . .";
-        & > *{
-            grid-area: a;
-            align-self: center;
-            justify-self: center;
-        }
+        width: 50%;
     }
 
     &__description-row{
-        grid-template-columns: repeat(auto-fit, 45%);
+        grid-template-columns: repeat(2, 50%);
         column-gap: 10%;
 
-        min-height: 70vh;
-        margin-bottom: 10vh;
+        min-height: 35rem;
 
         &:last-child .about-us__schema-diagram{
             grid-template-columns: 55% 15% 30%;
 
             text-align: center;
         }
-    }
+
+        &:last-child{
+            margin-top: 5rem;
+        }
+    } 
 
     &__description-column {
         display: grid;
@@ -60,10 +48,10 @@
     &__schema{
         background-color: rgb(239, 238, 234);
         height: 100%;
-        padding: 5vh;
+        padding: 2rem;
 
         &-diagram{
-            grid-template-columns: 20% 55% 25%;
+            grid-template-columns: repeat(auto-fit, 20% 55% 25%);
         }
 
         &-icon{
@@ -77,7 +65,7 @@
         &-step{
             display: flex;
 
-            min-height: 8vh;
+            min-height: 4rem;
             width: 100%;
 
             justify-content: center;
@@ -96,11 +84,11 @@
         }
 
         &-column:last-child &-icon{
-            margin-top: 15vh;
+            margin-top: 10rem;
         }
 
         &-heading{
-            margin-bottom: 10vh;
+            margin-bottom: 4rem;
 
             &-title{
                 font-size: $mediumFontSize;

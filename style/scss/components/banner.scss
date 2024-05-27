@@ -1,7 +1,6 @@
 .banner{
-    min-height: 170vh;
-    max-height: 2100px;
-    padding-top: 8vh;
+    min-height: 75rem;
+    padding-top: 5rem;
 
     background-color: $bannerBackgroundColor;
 
@@ -9,9 +8,9 @@
         width: 100%;
     }
 
+    /* banner title & text container*/
     &__content{
-        min-height: 42vh;
-        max-height: 500px;
+        min-height: 20rem;
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -22,8 +21,6 @@
 
         & > *{
             grid-area: a;
-            align-self: center;
-            justify-self: center;
             text-align: center;
         }
     }
@@ -38,8 +35,13 @@
     }
 }
 
-@include laptop{
+/* MDP laptop */
+@include MDP{
     .banner{
-       max-height: 1440px;
+        min-height: 81rem;
+        
+        &__content{
+            min-height: 26rem;
+        }
     }
 }

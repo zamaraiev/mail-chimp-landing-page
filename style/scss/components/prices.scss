@@ -1,18 +1,14 @@
 .prices{
-    min-height: 110vh;
-    max-height: 1800px;
-    padding: 10vh 0vh;
+    min-height: 40rem;
+    padding: 5rem 0;
 
     background-color: $bgColor6;
 
-    &__title-container{
-        text-align: center;
-        min-height: 10vh;
-        max-height: 110px;
-    }
-
     &__title{
         font-size: $mediumTitleFontSize;
+        text-align: center;
+
+        margin-bottom: 4rem;
     }
 
     &__recommended-plan{
@@ -23,15 +19,12 @@
         & > *{
             /* text */
             grid-area: a;
-            align-self: center;
-            justify-self: center;
             text-align: center;
         }
 
         &-container{
-            min-height: 5vh;
-            padding: 1.7vh 0;
-            width: 100%;
+            min-height: 2rem;
+            padding: 1rem 0;
     
             font-size: $smallFontSize;
     
@@ -48,18 +41,17 @@
         & > *{
             border: solid 1px $borderColor;
 
-            padding: 1.5vw;
+            padding: 1.5rem;
         }
     }
 
-    &__plan-describe{
+    &__plan-description{
         min-height: 2.5rem;
     }
 
     &__plan-row{
         border-bottom: solid 1px $borderColor;
-        min-height: 8vh;
-        max-height: 300px;
+        min-height: 4rem;
 
         align-items: center;
         display: grid;
@@ -69,10 +61,10 @@
         }
 
         &:first-child{
-            padding-bottom: 2vh;
+            padding-bottom: 1rem;
 
             &> p:last-child{
-                margin-top: 2vh;
+                margin-top: 1rem;
             }
         }
     }
@@ -87,7 +79,7 @@
         color: $greyTextColor;
         font-size: $smallFontSize;
 
-        margin-top: 1vh;
+        margin-top: 1rem;
     }
 
     /* Service plan warning */
@@ -113,7 +105,7 @@
     }
 
     &__see-all-plan-button{
-        min-width: 12vw;
-        min-height: 5vh;
+        width: 10rem;
+        min-height: 3rem;
     }
 }
