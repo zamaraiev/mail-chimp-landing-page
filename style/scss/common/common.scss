@@ -45,6 +45,8 @@ html{
     border-radius: 80px;
     border: none;
 
+    font-size: $smallFontSize;
+
     &:hover{
         border: solid 0.4px $buttonBorderColor;
     }
@@ -54,24 +56,25 @@ html{
     background: none;
 }
 
+.show{
+    display: block !important;
+}
+
 /* Grid system */
 
-%row{
+.row-column-2 , .row-column-3 , .row-column-4{
     display: grid;
 }
 
 .row-column-2{
-    @extend %row;
     grid-template-columns: repeat(auto-fit, 50%);
 }
 
 .row-column-3{
-    @extend %row;
     grid-template-columns: repeat(auto-fit, 33.33%);
 }
 
 .row-column-4{
-    @extend %row;
     grid-template-columns: repeat(auto-fit, 25%);
 }
 

@@ -47,6 +47,7 @@
 
     &__plan-description{
         min-height: 2.5rem;
+        width: 90%;
     }
 
     &__plan-row{
@@ -73,13 +74,28 @@
         font-size: $smallFontSize;
         text-align: center;
         text-decoration: underline;
+
+        & span{
+            color: $greyTextColor;
+        }
+    }
+
+    &__plan-title{
+        font-size: $mediumFontSize;
     }
 
     &__plan-text{
         color: $greyTextColor;
         font-size: $smallFontSize;
 
+        line-height: 1.2rem;
+
         margin-top: 1rem;
+    }
+
+    &__plan-price{
+        font-family: $secondFontFamily;
+        font-size: $mediumTitleFontSize;
     }
 
     /* Service plan warning */
@@ -107,5 +123,17 @@
     &__see-all-plan-button{
         width: 10rem;
         min-height: 3rem;
+    }
+
+    @media (max-width: 900px) {
+        &__table-container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__recommended-plan{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: ". a";
+        }
     }
 }

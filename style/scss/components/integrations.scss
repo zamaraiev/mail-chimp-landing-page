@@ -1,0 +1,78 @@
+.integrations{
+    min-height: 40rem;
+    padding: 8rem 0 5rem;
+
+    &__title{
+        font-size: $mediumTitleFontSize;
+        width: 40%;
+    }
+
+    &__column , &__block{
+        display: grid;
+        gap: 2rem;
+    }
+
+    &__row{
+        width: 95%;
+        margin: 3rem auto 3rem auto;
+    }
+
+    &__column{
+        grid-template-rows: repeat(3, auto);
+    }
+
+    &__link{
+        font-size: $normalFontSize;
+    }
+
+    &__block{
+        grid-template-columns: 1fr 4fr;
+
+        &-img{
+            width: 100%;
+            max-height: 120px;
+        }
+
+        &-title{
+            margin: 0.5rem 0;
+        }
+
+        &-text{
+            width: 70%;
+
+            font-size: $smallFontSize;
+            color: $greyTextColor;
+
+            line-height: 1rem;
+        }
+    }
+
+    @media (max-width: 900px) {
+        &__title{
+            width: 100%;
+            text-align: center;
+        }
+
+        &__row {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        &__block {
+            grid-template-columns: 1fr;
+
+            &-text {
+                width: 100%;
+            }
+
+            &-img {
+                width: 100%;
+                max-height: 250px;
+            }
+        }
+
+        &__column {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+    }
+}

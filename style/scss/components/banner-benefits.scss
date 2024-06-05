@@ -17,6 +17,8 @@
     &__title{
         margin-bottom: 2rem;
         font-size: $normalFontSize;
+
+        line-height: 1.5rem;
     }
 
     &__link{
@@ -62,6 +64,24 @@
     &__text{
         text-align: center;
         color: $whiteTextColor;
-        font-size: $mediumFontSize;
+        font-size: $largeTextFontSize;
+
+        line-height: 1.7rem;
+    }
+
+    @media (max-width: 900px) {
+        &__row-2{
+            grid-template-areas:
+                ". . . . . . . ."
+                ". . . . . . . ."
+                ". . . . . . . ."
+                ". a a a a a a ."
+                ". . . . . . . .";
+
+        }
+
+        &__row-1 {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }

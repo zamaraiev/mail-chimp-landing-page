@@ -2,7 +2,7 @@
     position: fixed;
 
     width: 100vw;
-    padding: 1.5rem 0px;
+    padding: 0.5rem 0px;
 
     background-color: $bannerBackgroundColor;
 
@@ -52,6 +52,23 @@
         &__icon {
             height: 50%;
             margin-top: 10%;
+        }
+    }
+
+    &__toggle {
+        display: none;
+        font-size: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+       &__container.row-column-3{
+            grid-template-rows: repeat(3, 100%);
+            & > *{
+                margin: 1rem;
+            }
         }
     }
 }

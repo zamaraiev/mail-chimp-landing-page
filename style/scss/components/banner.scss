@@ -31,7 +31,25 @@
     }
 
     &__text{
-       font-size: $mediumFontSize;
+       font-size: $largeTextFontSize;
+       line-height: 2rem;
+       margin-bottom: 1.5rem;
+    }
+
+    &__button{
+        min-width: 5rem;
+        min-height: 2rem;
+    }
+
+    @media (max-width: 900px) {
+        &__content {
+            min-height: 30rem;
+            grid-template-columns: repeat(8,1fr);
+            grid-template-areas:
+          ". . . . . . . ." 
+          ". a a a a a a ." 
+          ". . . . . . . .";
+          }
     }
 }
 

@@ -1,0 +1,133 @@
+.footer{
+    min-height: 50rem;
+
+    background-color: $bgColor2;
+
+    &__related-links{
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        *{
+            margin: 0 1rem;
+
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__related-links-text{
+        font-size: $normalFontSize;
+    }
+
+    &__main-container , &__bottom-container , &__related-container{
+        width: 80%;
+        display: grid;
+    }
+
+    &__main{
+        min-height: 30rem;
+
+        border: solid 2px black;
+        border-left: none;
+        border-right: none;
+
+        &-container{
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        &-column{
+            li{
+                margin: 1rem 0;
+            }
+    
+            p{
+                margin: 2rem 0;
+            }
+        }
+
+        &-text{
+            font-family: $secondFontFamily;
+
+            margin: 0 0 1rem 0 !important;
+        }
+    }
+
+    &__logo{
+        width: 100%;
+        max-height: 50px;
+
+        margin: 1.5rem 0 1rem 0;
+
+        &-2{
+            margin-top: 5rem;
+        }
+    }
+
+    &__bottom{
+        display: grid;
+        height: 20rem;
+
+        & , &-container{
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__app-markets-img{
+        width: 6rem;  
+        margin-left: 1rem;
+
+        &:hover{
+            width: 7rem;
+        }
+    }
+
+    &__social-logos-img{
+        width: 1.2rem;
+        margin-left: 1rem;
+
+        &:hover{
+            width: 1.5rem;
+        }
+    }
+
+    &__copyright{
+        &-title{
+            font-size: $normalFontSize;
+        }
+
+        &-text{
+            font-size: $smallFontSize;
+            margin: 1rem 0;
+        }
+    }
+
+    @media (max-width: 900px) {
+        &__main{
+            &-container {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+            }
+
+            &-column {
+                margin: 1rem 0;
+            }
+        }
+
+        &__social-logos a:first-child img{
+            margin-left: 0;
+        }
+
+        &__bottom-container{
+            grid-template-columns: 100%;
+            justify-items: center;
+
+            & > *{
+                margin: 1rem 0;
+            }
+        }
+    }    
+}
