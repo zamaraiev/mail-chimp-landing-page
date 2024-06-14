@@ -10,14 +10,21 @@
 
     &__title{
         font-size: $smallTitleFontSize;
+        
         width: 70%;
+    }
+
+    &__column-block{
+        width: 90%;
+        padding: 1rem 0;
+
+        border-bottom: solid 2px black;
     }
 
     &__item{
         display: none;
-        border-bottom: solid 2px black;
-        min-height: 10rem;
 
+        min-height: 10rem;
         width: 90%;
 
         &-description{
@@ -29,6 +36,7 @@
 
         &-title{
             margin-top: 2rem;
+
             font-size: $normalFontSize;
 
             &::after {
@@ -44,6 +52,7 @@
 
     &__col-1{
         padding: 8rem 3rem;
+
         border-right: solid 1rem #f0d1b6;
     }
 
@@ -64,7 +73,8 @@
         &__col-1 {
             border-right: none;
             border-bottom: solid 1rem #f0d1b6;
-            padding: 4rem 2rem;
+
+            padding: 4rem 1.5rem;
         }
 
         &__col-2 ,  &__col-1 {

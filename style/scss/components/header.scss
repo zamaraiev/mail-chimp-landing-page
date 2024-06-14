@@ -2,7 +2,7 @@
     position: fixed;
 
     width: 100vw;
-    padding: 0.5rem 0px;
+    padding: 1rem 0px;
 
     background-color: $bannerBackgroundColor;
 
@@ -32,12 +32,12 @@
 
     &__contacts{
         height: 100%;
+
         display: grid;
+        align-items: center;
 
         text-align: right;
         font-size: $smallFontSize;
-
-        align-items: center;
     }
 
     &__sign-in-sign-up-bar{
@@ -57,17 +57,56 @@
 
     &__toggle {
         display: none;
-        font-size: 1rem;
+
+        font-size: 1.5rem;
+
         background: none;
         border: none;
         cursor: pointer;
+
+        grid-area: d;
+    }
+
+    &__menu--active{
+        display: none !important;
     }
 
     @media (max-width: 900px) {
-       &__container.row-column-3{
-            grid-template-rows: repeat(3, 100%);
+        padding: 2rem 0px;
+        &__container{
+            grid-template-areas:
+                "a b b b b b"
+                "c c c c c c"
+                "d d d d d d";
+            grid-template-columns: repeat(6, 1fr) !important;
+        }
+
+        &__toggle{
+            display: grid;
+            align-self: center;
+            justify-self: center;
+            grid-area: a;
+
+            //width: 50%;
+        }
+
+        &__logo{
+            grid-area: b;
+            justify-self: start;
+        }
+
+        &__menu{
+            display: grid;
+            grid-area: c;
+
+            margin: 1rem 0;
+        }
+
+        &__controls{
+            display: block;
+            grid-area: d;
             & > *{
-                margin: 1rem;
+                text-align: left;
             }
         }
     }

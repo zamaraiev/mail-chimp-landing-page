@@ -9,7 +9,7 @@
 <body>
     <!--HEADER-->
    <header class="header">
-        <div class="container header__container row-column-3">
+        <div class="container row-column-3 header__container">
             <button class="header__toggle button">☰</button>
             <nav class="header__menu">
                 <a href="#" class="link header__link">Products</a>
@@ -52,31 +52,39 @@
             <section class="banner-benefits">
                 <div class="banner-benefits__row-1 row-column-4">
                     <div class="banner-benefits__column" id="banner-benefits-1">
-                        <img src="assets/banner/benefit-1.svg" alt="benefit img" class="banner-benefits__img img">
+                        <div class="banner-benefits__img-container">
+                            <img src="assets/banner/benefit-1.svg" alt="benefit img" class="banner-benefits__img img">
+                        </div>
                         <div class="banner-benefits__content">
                             <p class="banner-benefits__title">Send the right message at the right time to convert more customers.</p>
-                            <a href="#" class="link banner-benefits__link">Learn more</a>
+                            <a href="#" class="banner-benefits__link button link">Learn more</a>
                         </div>
                     </div>
                     <div class="banner-benefits__column" id="banner-benefits-2">
-                        <img src="assets/banner/benefit-2.svg" alt="benefit img" class="banner-benefits__img img">
+                        <div class="banner-benefits__img-container">
+                            <img src="assets/banner/benefit-2.svg" alt="benefit img" class="banner-benefits__img img">
+                        </div>
                         <div class="banner-benefits__content">
                             <p class="banner-benefits__title">Get AI-assisted suggestions to help make your content more engaging.</p>
-                            <a href="#" class="link banner-benefits__link">Learn more</a>
+                            <a href="#" class="banner-benefits__link button link">Learn more</a>
                         </div>
                     </div>
                     <div class="banner-benefits__column" id="banner-benefits-3">
-                        <img src="assets/banner/benefit-3.svg" alt="benefit img" class="banner-benefits__img img">
+                        <div class="banner-benefits__img-container">
+                            <img src="assets/banner/benefit-3.svg" alt="benefit img" class="banner-benefits__img img">
+                        </div>
                         <div class="banner-benefits__content">
                             <p class="banner-benefits__title">Boost customer loyalty by predicting the right ones to target.</p>
-                            <a href="#" class="link banner-benefits__link">Learn more</a>
+                            <a href="#" class="banner-benefits__link button link">Learn more</a>
                         </div>
                     </div>
                     <div class="banner-benefits__column" id="banner-benefits-4">
-                        <img src="assets/banner/benefit-4.svg" alt="benefit img" class="banner-benefits__img img">
+                        <div class="banner-benefits__img-container">
+                            <img src="assets/banner/benefit-4.svg" alt="benefit img" class="banner-benefits__img img">
+                        </div>
                         <div class="banner-benefits__content">
                             <p class="banner-benefits__title">Connect more tools, get more data, save time, and make better decisions.</p>
-                            <a href="#" class="link banner-benefits__link">Learn more</a>
+                            <a href="#" class="banner-benefits__link button link">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -352,16 +360,20 @@
         <div class="additional-info__container container row-column-2">
             <div class="additional-info__column additional-info__col-1">
                 <h2 class="additional-info__title">Keep customers ready to buy with engaging contant</h2>
-                <p class="additional-info__item-title">Content Optimizer</p>
-                <div class="additional-info__item">
-                    <p class="additional-info__item-description">Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</p>
-                    <a href="#" class="additional-info__item-link link">Learn more</a>
-                </div>
 
-                <p class="additional-info__item-title">Content Optimizer</p>
-                <div class="additional-info__item">
-                    <p class="additional-info__item-description">Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</p>
-                    <a href="#" class="additional-info__item-link link">Learn more</a>
+                <div class="additional-info__column-block">
+                    <p class="additional-info__item-title">Content Optimizer</p>
+                    <div class="additional-info__item">
+                        <p class="additional-info__item-description">Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</p>
+                        <a href="#" class="additional-info__item-link link">Learn more</a>
+                    </div>
+                </div>
+                <div class="additional-info__column-block">
+                    <p class="additional-info__item-title">Content Optimizer</p>
+                    <div class="additional-info__item">
+                        <p class="additional-info__item-description">Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</p>
+                        <a href="#" class="additional-info__item-link link">Learn more</a>
+                    </div>
                 </div>
             </div>
             <div class="additional-info__column additional-info__col-2"></div>
@@ -481,9 +493,9 @@
         <nav class="footer__related-links">
             <div class="footer__related-container container">
                 <p class="footer__related-links-text">Related Links:</p>
-                <a href="#" class="related-link link">Website Builder</a>
-                <a href="#" class="related-link link">Canva</a>
-                <a href="#" class="related-link link">The Picture Perfect Guide on How to Use Pinterest</a>
+                <a href="#" class="related-link footer__link link">Website Builder</a>
+                <a href="#" class="related-link footer__link link">Canva</a>
+                <a href="#" class="related-link footer__link link">The Picture Perfect Guide on How to Use Pinterest</a>
             </div>
         </nav>
         <div class="footer__main">
@@ -491,16 +503,16 @@
                 <div class="footer__main-column">
                     <p class="footer__column-title">Products</p>
                     <ul class="footer__list">
-                        <li class="footer__list-item"><a href="#" class="footer__link link">Why Mailchimp?</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link link">Product Updates</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link link">Email Marketing</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link link">Websites</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link link">Transactional Email</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link link">How We Compare</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link link">GDPR Compliance</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link link">Security</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link link">Status</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link link">Mobile App</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">Why Mailchimp?</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">Product Updates</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">Email Marketing</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">Websites</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">Transactional Email</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">How We Compare</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">GDPR Compliance</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">Security</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">Status</a></li>
+                        <li class="footer__list-item footer__link"><a href="#" class="link">Mobile App</a></li>
                     </ul>
                 </div>
                 <div class="footer__main-column">

@@ -9,7 +9,7 @@
 
     &__column , &__block{
         display: grid;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     &__row{
@@ -27,6 +27,7 @@
 
     &__block{
         grid-template-columns: 1fr 4fr;
+        padding: 1rem;
 
         &-img{
             width: 100%;
@@ -45,6 +46,10 @@
 
             line-height: 1rem;
         }
+
+        &:hover{
+            background-color: $bgColor6;
+        }
     }
 
     @media (max-width: 900px) {
@@ -54,6 +59,7 @@
         }
 
         &__row {
+            width: 100%;
             grid-template-columns: 1fr;
             gap: 3rem;
         }

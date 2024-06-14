@@ -5,9 +5,25 @@
         min-height: 30rem;
     }
 
-    &__img{
+    &__img-container {
+        display: inline-block;
+        overflow: hidden;
+        
         width: 100%;
         max-height: 80%;
+        
+        img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 
     &__content{
@@ -23,7 +39,13 @@
 
     &__link{
         margin-left: 1rem;
+        padding: 0.5rem;
+
         font-size: $smallFontSize;
+    }
+
+    #banner-benefits-1 ,  #banner-benefits-2, #banner-benefits-3, #banner-benefits-4{
+        overflow: hidden;
     }
 
     #banner-benefits-1{

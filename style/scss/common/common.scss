@@ -49,6 +49,7 @@ html{
 
     &:hover{
         border: solid 0.4px $buttonBorderColor;
+        border-bottom: solid 0.3rem $buttonBorderColor;
     }
 }
 

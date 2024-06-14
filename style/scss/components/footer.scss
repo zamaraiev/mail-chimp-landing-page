@@ -3,27 +3,9 @@
 
     background-color: $bgColor2;
 
-    &__related-links{
-        height: 10rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        *{
-            margin: 0 1rem;
-
-            display: flex !important;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
-    &__related-links-text{
-        font-size: $normalFontSize;
-    }
-
     &__main-container , &__bottom-container , &__related-container{
         width: 80%;
+
         display: grid;
     }
 
@@ -38,14 +20,8 @@
             grid-template-columns: repeat(6, 1fr);
         }
 
-        &-column{
-            li{
-                margin: 1rem 0;
-            }
-    
-            p{
-                margin: 2rem 0;
-            }
+        &-column p{
+            margin: 2rem 0;
         }
 
         &-text{
@@ -55,10 +31,33 @@
         }
     }
 
+    &__related-links{
+        height: 10rem;
+
+        & , *{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & .related-link{
+            margin: 0 1rem;
+        }
+    }
+
+    &__related-links-text{
+        font-size: $normalFontSize;
+    }
+
+    &__link{
+        margin: 1rem 0;
+
+        font-size: $smallFontSize;
+    }
+
     &__logo{
         width: 100%;
         max-height: 50px;
-
         margin: 1.5rem 0 1rem 0;
 
         &-2{
@@ -68,6 +67,7 @@
 
     &__bottom{
         display: grid;
+        
         height: 20rem;
 
         & , &-container{
@@ -108,8 +108,7 @@
     @media (max-width: 900px) {
         &__main{
             &-container {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2rem;
+                grid-template-columns: repeat(2, 1fr);
             }
 
             &-column {
