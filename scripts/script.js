@@ -1,3 +1,5 @@
+AOS.init();
+
 function dropDown(event) {
     const description = event.target.nextElementSibling;
     if (description && description.classList.contains('additional-info__item')) {

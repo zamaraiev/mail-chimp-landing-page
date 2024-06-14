@@ -105,5 +105,9 @@
         &__row-1 {
             grid-template-columns: repeat(2, 1fr);
         }
+
+        &__content{
+            padding: 2rem;
+        }
     }
 }

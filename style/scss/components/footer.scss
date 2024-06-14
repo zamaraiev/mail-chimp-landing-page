@@ -50,9 +50,11 @@
     }
 
     &__link{
-        margin: 1rem 0;
-
         font-size: $smallFontSize;
+    }
+
+    &__list-item{
+        margin: 1rem 0;
     }
 
     &__logo{
