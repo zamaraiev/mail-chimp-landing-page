@@ -8,15 +8,28 @@
 
 </head>
 <body>
+    <div class="popup" id="signup-popup">
+        <div class="popup__content">
+            <button class="popup__close button" id="close-popup">&times;</button>
+            <h2 class="popup__title">Sign Up</h2>
+            <form class="popup__form">
+                <label for="email" class="popup__label">Email:</label>
+                <input type="email" id="email" class="popup__input" required>
+                <label for="password" class="popup__label">Password:</label>
+                <input type="password" id="password" class="popup__input" required>
+                <button type="submit" class="popup__button button">Sign Up</button>
+            </form>
+        </div>
+    </div>
     <!--HEADER-->
    <header class="header">
         <div class="container row-column-3 header__container">
             <button class="header__toggle button">☰</button>
             <nav class="header__menu">
-                <a href="#" class="link header__link">Products</a>
-                <a href="#" class="link header__link">Resources</a>
-                <a href="#" class="link header__link">Inspiration</a>
-                <a href="#" class="link header__link">Pricing</a>
+                <a href="#products" class="link header__link">Products</a>
+                <a href="#resources" class="link header__link">Resources</a>
+                <a href="#inspiration" class="link header__link">Inspiration</a>
+                <a href="#pricing" class="link header__link">Pricing</a>
             </nav>
             <img src="assets/header/logo.svg" alt="header logo" class="img header__logo">
             <div class="header__controls">
@@ -30,13 +43,13 @@
                     </button>
                     <button class="search-controls button button-transperent">Search</button>
                     <button class="user-access-buttons button button-transperent">Log In</button>
-                    <button class="user-access-buttons button">Sign Up</button>
+                    <button class="user-access-buttons button sign-up-button" id="sign-up-button">Sign Up</button>
                 </div>
             </div>
         </div>
    </header>
    <!--BANNER-->
-   <section class="banner">
+   <section class="banner" id="products">
         <div class="banner__container container">
             <div class="banner__content">
                 <div class="banner__text-block">
@@ -105,7 +118,7 @@
         </div> 
    </section>
    <!--PRICES-->
-   <section class="prices" >
+   <section class="prices" id="pricing">
         <div class="prices__container container">
             <h2 class="prices__title">Find the right plan</h2>
             <div class="prices__table" data-aos="fade-down"  data-aos-easing="linear" data-aos-duration="1000">
@@ -236,7 +249,7 @@
         </div>
    </section>
    <!--ABOUT US-->
-   <section class="about-us" >
+   <section class="about-us" id="inspiration">
         <div class="about-us__container container">
             <h2 class="about-us__title">
                 Generate up to 4x more orders* 
@@ -386,7 +399,7 @@
         </div>
     </section>
     <!--INTEGRATIONS-->
-    <section class="integrations">
+    <section class="integrations" id="resources">
         <div class="integrations__container container">
             <h2 class="integrations__title">Bring in more data, drive more growth with our integrations</h2>
             <div class="integrations__row row-column-3">
