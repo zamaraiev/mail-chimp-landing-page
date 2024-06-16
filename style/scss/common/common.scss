@@ -58,7 +58,18 @@ html{
 }
 
 .show{
-    display: block !important;
+    max-height: 100rem !important;
+    opacity: 1 !important;
+    min-height: 10rem;
+}
+
+img {
+    transition: filter 0.3s;
+}
+
+img.lazyload ,  img.lazyestload {                
+    width: 100%;
+    filter: blur(8px);
 }
 
 /* Grid system */

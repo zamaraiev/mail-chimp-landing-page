@@ -22,9 +22,11 @@
     }
 
     &__item{
-        display: none;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        overflow: hidden;
+        opacity: 0;
 
-        min-height: 10rem;
+        max-height: 0;
         width: 90%;
 
         &-description{

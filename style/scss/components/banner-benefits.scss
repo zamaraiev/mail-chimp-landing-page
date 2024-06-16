@@ -11,6 +11,10 @@
         
         width: 100%;
         max-height: 80%;
+
+        &:hover h2{
+            text-decoration: underline;
+        }
         
         img {
             display: block;
@@ -24,24 +28,6 @@
                 transform: scale(1.1);
             }
         }
-    }
-
-    &__content{
-        padding: 1.5rem;
-    }
-
-    &__title{
-        margin-bottom: 2rem;
-        font-size: $normalFontSize;
-
-        line-height: 1.5rem;
-    }
-
-    &__link{
-        margin-left: 1rem;
-        padding: 0.5rem;
-
-        font-size: $smallFontSize;
     }
 
     #banner-benefits-1 ,  #banner-benefits-2, #banner-benefits-3, #banner-benefits-4{
@@ -64,6 +50,36 @@
         background-color: $bgColor4;
     }
 
+    &__content{
+        padding: 1.5rem;
+
+        height: max-content;
+        min-height: 10rem;
+    }
+
+    &__title{
+        position: absolute;
+        bottom: 20rem;
+        margin: 2rem;
+
+        font-size: $mediumFontSize;
+    }
+
+    &__text{
+        margin-bottom: 2rem;
+        min-height: 60%;
+
+        font-size: $normalFontSize;
+        line-height: 1.5rem;
+    }
+
+    &__link{
+        margin-left: 1rem;
+        padding: 0.5rem;
+
+        font-size: $smallFontSize;
+    }
+
     &__row-2{
         background-color: $bgColor5;
         min-height: 20rem;
@@ -75,20 +91,21 @@
             ". . . . . . . ."
             ". . . . . . . ."
             ". . a a a a . ."
-            ". . . . . . . .";
+            ". . . . . . . ."
+        ;
 
         & > *{
             grid-area: a;
             align-self: center;
         }
-    }
 
-    &__text{
-        text-align: center;
-        color: $whiteTextColor;
-        font-size: $largeTextFontSize;
-
-        line-height: 1.7rem;
+        &-text{
+            text-align: center;
+            color: $whiteTextColor;
+            font-size: $largeTextFontSize;
+    
+            line-height: 1.7rem;
+        }
     }
 
     @media (max-width: 900px) {
@@ -106,8 +123,55 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
+        &__img-container{
+            max-height: 20rem;
+        }
+
+        &__title{
+            position: relative;
+            bottom: 22rem;
+        }
+
         &__content{
-            padding: 2rem;
+            height: 13rem;
+        }
+
+        @media (min-width: 400px){
+            &__title{
+                bottom: 24rem;
+            }
         }
     }
+
+    @media (min-height: 940px) and (max-height: 1100px) {
+        &__title{
+            position: relative;
+            bottom: 33rem;
+        }
+
+        &__content{
+            height: max-content;
+        }
+
+        &__img-container{
+            max-height: 75%;
+        }
+
+        &__column{
+            max-height: 40rem;
+        }
+
+        @media (max-width: 900px){
+            &__title{
+                bottom: 45rem;
+            }
+        } 
+    }
+
+    @media (min-width: 3000px){
+        &__title{
+            bottom: 60rem;
+        }
+    }
+   
 }
