@@ -49,7 +49,7 @@ html{
 
     &:hover{
         border: solid 0.4px $buttonBorderColor;
-        border-bottom: solid 0.3rem $buttonBorderColor;
+        border-bottom: solid 0.2rem $buttonBorderColor;
     }
 }
 
@@ -83,6 +83,7 @@ img.lazyload ,  img.lazyestload {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    font-size: 1.5rem;
 
     &__content {
         background-color: white;
@@ -98,7 +99,6 @@ img.lazyload ,  img.lazyestload {
         position: absolute;
         top: 10px;
         right: 10px;
-        font-size: 1.5rem;
         background: none;
         border: none;
         cursor: pointer;
@@ -106,39 +106,38 @@ img.lazyload ,  img.lazyestload {
 
     &__title {
         margin-bottom: 1.5rem;
-        font-size: 1.5rem;
         text-align: center;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
+    }
 
-        &__label {
-            margin: 1rem;
-            font-size: 1rem;
-        }
+    &__label {
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
 
-        &__input {
-            margin: 1rem;
-            padding: 0.5rem;
-            font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+    &__input, &__button {
+        border-radius: 2rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
 
-        &__button {
-            padding: 0.5rem;
-            font-size: 1rem;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+    &__input {
+        border: 1px solid #ccc;
+    }
 
-            &:hover {
-                background-color: #0056b3;
-            }
+    &__button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: #0056b3;
+            border: none !important;
         }
     }
 }
